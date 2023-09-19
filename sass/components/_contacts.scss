@@ -1,0 +1,41 @@
+.contacts {
+    margin-left: auto;
+&__list {
+    display: flex;
+}
+
+&__list>.item:not(:last-child) {
+    margin-right: 50px;
+}
+
+&__link {
+    display: flex;
+    align-items: center;
+
+    color: $main-text;
+    font-size: 14px;
+    font-weight: 500;
+    list-style-image: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__link:hover,
+&__link:focus,
+&__link:active {
+    color: $brand-color;
+}
+
+
+&__icons {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+&__icons:hover,
+&__icons:focus {
+    fill: $brand-color;
+}}
+

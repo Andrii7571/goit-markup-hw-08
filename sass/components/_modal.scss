@@ -1,0 +1,152 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    min-width: 528px;
+    padding: 40px;
+
+    border-radius: 4px;
+    background: $White-color;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&__btn-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+
+    color: #000000;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: $White-color;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__btn-icons {
+    fill: currentColor;
+}
+
+&__btn-close:hover {
+    color: $brand-color;
+}
+
+/* modal-form */
+
+&__title {
+    display: block;
+    margin-bottom: 12px;
+
+    color: $color-title;
+    text-align: center;
+      font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+&__name {
+    display: block;
+    margin-bottom: 4px;
+
+    color: $main-text;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.12px;
+}
+
+&__input {
+    width: 448px;
+    height: 40px;
+    flex-shrink: 0;
+    padding-left: 42px;
+
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: transparent;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__label {
+    position: relative;
+    display: block;
+    color: $color-title;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__label:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+&__icons {
+    position: absolute;
+    top: 30px;
+    left: 12px;
+    fill: currentColor;
+}
+
+&__label:hover,
+&__label:focus-within {
+    color: $brand-color;
+}
+
+&__textarea {
+    width: 448px;
+    height: 120px;
+    padding: 12px 16px;
+
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: transparent;
+    resize: none;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__label.textarea {
+    margin-bottom: 20px;
+}
+
+&__btn-submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;
+
+    color: $White-color;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
+    letter-spacing: 0.96px;
+    border: 0;
+    border-radius: 4px;
+    background: $modal__btn-submit;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+&__input:hover,
+&__input:focus,
+&__textarea:hover,
+&__textarea:focus {
+    border: 1px solid $brand-color;
+}
+&__label.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}}
+

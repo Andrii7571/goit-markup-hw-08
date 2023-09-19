@@ -1,39 +1,21 @@
-body {
-    font-family: "roboto", sans-serif;
-    color: var(--main-text);
-    font-size: 14px;
-    line-height: 1.2;
-}
+$backdrop-background-color: rgba(0, 0, 0, 0.2);
+$main-text: #757575;
+$brand-color:#2196f3;
+$color-title: #212121;
+$customers-gruop-color: #afb1b8;
+$features-group-color: #f5f4fa;
+$filter-background: #f5f4fa;
+$White-color: #fff;
+$social-network-color: rgba(255, 255, 255, 0.1);
+$social-network-link: rgba(255, 255, 255, 0.6);
+$background-accent: #2f303a;
+$logo-header:#000;
+$modal__btn-submit:#188ce8;
+$modal__btn-close:#000;
+$product-thumb: rgba(33, 150, 243, 0.9);
+$services-gruop:rgba(47, 48, 58, 0.8);
+$social-network:#afb1b8;
+$background-secondary:#f5f4fa;
 
-ul {
-    padding-left: 0;
-    margin: 0;
-    list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-}
-
-p {
-    margin: 0;
-}
-
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-.container {
-    width: 1200px;
-
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
+$logo-font: Raleway;
+$main-font: roboto;
