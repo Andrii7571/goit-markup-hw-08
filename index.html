@@ -30,6 +30,60 @@
                         <a class="navigation__link link" href="">Контакти</a>
                     </li>
                 </ul>
+                <div class="continer-menu">
+                    <button class="burger-menu js-open-menu" type="button">
+                        <svg class="burger-menu__icons" width="40" height="40" aria-label="Перемикач мобілного меню">
+                            <use class="burger-menu__icon-cross" href="./imges/sprite.svg#cross"></use>
+                            <use class="burger-menu__icon-menu" href="./imges/sprite.svg#menu"></use>
+                        </svg>
+                    </button>
+                    <div class="mobile-menu">
+                        <ul class="modile-menu__nav">
+                            <li class="mobile-menu__nav-item item"><a class="mobile-menu__link link" href="">Студія</a>
+                            </li>
+                            <li class="mobile-menu__nav-item item"><a class="mobile-menu__link link"
+                                    href="">Портфоліо</a>
+                            </li>
+                            <li class="mobile-menu__nav-item item"><a class="mobile-menu__link link"
+                                    href="">Контакти</a>
+                            </li>
+                        </ul>
+                        <ul class="modile-menu__list list">
+                            <li class="modile-menu__item item">
+                                <a class="modile-menu__link modile-menu__link--blue link" href="tel:+380961111111">
+                                    +38 096 111 11 11</a>
+
+                            </li>
+                            <li class="modile-menu__item item">
+                                <a class="modile-menu__link link" href="mailto:info@devstudio.com">
+                                    info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <div class="mobile-menu__social">
+                            <ul class="mobile-menu__social-list">
+                                <li class="mobile-menu__social-item">
+                                    <a class="mobile-menu__social-link link" href="">
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li class="mobile-menu__social-item">
+                                    <a class="mobile-menu__social-link link" href="">
+                                        Twitter
+                                    </a>
+                                </li>
+                                <li class="mobile-menu__social-item">
+                                    <a class="mobile-menu__social-link link" href="">
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="mobile-menu__social-item">
+                                    <a class="mobile-menu__social-link link" href="">
+                                        LinkedIn
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
             </nav>
             <div class="contacts">
                 <ul class="contacts__list list">
@@ -47,17 +101,17 @@
                     </li>
                 </ul>
             </div>
-        </div>
+
     </header>
     <main>
-
-        <section class="hero section">
-            <div class="container">
-                <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="btn hero__btn" type="button" data-modal-open>Замовити послугу</button>
-            </div>
-        </section>
-
+        <div class="wrapper-hero">
+            <section class="hero section">
+                <div class="container">
+                    <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+                    <button class="btn hero__btn" type="button" data-modal-open>Замовити послугу</button>
+                </div>
+            </section>
+        </div>
         <section class="features section">
             <div class="container">
                 <div class="features-group">
@@ -143,190 +197,191 @@
                 </ul>
             </div>
         </section>
+        <div class="wrapper-team">
+            <section class="team section">
+                <div class="container team-gruop">
+                    <h2 class="team-gruop__title">Наша команда</h2>
+                    <ul class="team-gruop__list">
+                        <li class="team-gruop__item item">
+                            <img class="imge" src="./imges/team-photo/igor-demyanenko.jpg" alt="фото Ігоря Дем'яненко"
+                                width="100%">
+                            <div class="team-gruop__description">
+                                <h3 class="team-gruop__name">Ігор Дем'яненко</h3>
+                                <p class="team-gruop__text" lang="eu">Product Designer</p>
+                                <div class="social-network">
+                                    <ul class="social-network__list">
+                                        <li class="social-network__item">
+                                            <a class="social-network__link" href="">
+                                                <svg class="social-network__icons" width="20" height="20">
+                                                    <use href="./imges/sprite.svg#instagram"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="social-network__item">
+                                            <a class="social-network__link" href="">
+                                                <svg class="social-network__icons" width="20" height="20">
+                                                    <use href="./imges/sprite.svg#twitter"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="social-network__item">
+                                            <a class="social-network__link" href="">
+                                                <svg class="social-network__icons" width="20" height="20">
+                                                    <use href="./imges/sprite.svg#facebook">
 
-        <section class="team section">
-            <div class="container team-gruop">
-                <h2 class="team-gruop__title">Наша команда</h2>
-                <ul class="team-gruop__list">
-                    <li class="team-gruop__item item">
-                        <img class="imge" src="./imges/team-photo/igor-demyanenko.jpg" alt="фото Ігоря Дем'яненко"
-                            width="270">
-                        <div class="team-gruop__description">
-                            <h3 class="team-gruop__name">Ігор Дем'яненко</h3>
-                            <p class="team-gruop__text" lang="eu">Product Designer</p>
-                            <div class="social-network">
-                                <ul class="social-network__list">
-                                    <li class="social-network__item">
-                                        <a class="social-network__link" href="">
-                                            <svg class="social-network__icons" width="20" height="20">
-                                                <use href="./imges/sprite.svg#instagram"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="social-network__item">
-                                        <a class="social-network__link" href="">
-                                            <svg class="social-network__icons" width="20" height="20">
-                                                <use href="./imges/sprite.svg#twitter"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="social-network__item">
-                                        <a class="social-network__link" href="">
-                                            <svg class="social-network__icons" width="20" height="20">
-                                                <use href="./imges/sprite.svg#facebook">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="social-network__item">
+                                            <a class="social-network__link" href="">
+                                                <svg class="social-network__icons" width="20" height="20">
+                                                    <use href="./imges/sprite.svg#linkedin">
 
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="social-network__item">
-                                        <a class="social-network__link" href="">
-                                            <svg class="social-network__icons" width="20" height="20">
-                                                <use href="./imges/sprite.svg#linkedin">
-
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="team-gruop__item item">
-                        <img class="imge" src="./imges/team-photo/olga-repina.jpg" alt="фото Ольги Рэпіной" width="270">
-                        <div class="team-gruop__description">
-                            <h3 class="team-gruop__name">Ольга Рєпіна</h3>
-                            <p class="team-gruop__text" lang="eu">Frontend Developer</p>
-                            <div class="social-network">
-                                <ul class="social-network__list">
-                                    <li class="social-network__item">
-                                        <a class="social-network__link" href="">
-                                            <svg class="social-network__icons" width="20" height="20">
-                                                <use href="./imges/sprite.svg#instagram"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="social-network__item">
-                                        <a class="social-network__link" href="">
-                                            <svg class="social-network__icons" width="20" height="20">
-                                                <use href="./imges/sprite.svg#twitter"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="social-network__item">
-                                        <a class="social-network__link" href="">
-                                            <svg class="social-network__icons" width="20" height="20">
-                                                <use href="./imges/sprite.svg#facebook">
+                        </li>
+                        <li class="team-gruop__item item">
+                            <img class="imge" src="./imges/team-photo/olga-repina.jpg" alt="фото Ольги Рэпіной"
+                                width="100%">
+                            <div class="team-gruop__description">
+                                <h3 class="team-gruop__name">Ольга Рєпіна</h3>
+                                <p class="team-gruop__text" lang="eu">Frontend Developer</p>
+                                <div class="social-network">
+                                    <ul class="social-network__list">
+                                        <li class="social-network__item">
+                                            <a class="social-network__link" href="">
+                                                <svg class="social-network__icons" width="20" height="20">
+                                                    <use href="./imges/sprite.svg#instagram"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="social-network__item">
+                                            <a class="social-network__link" href="">
+                                                <svg class="social-network__icons" width="20" height="20">
+                                                    <use href="./imges/sprite.svg#twitter"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="social-network__item">
+                                            <a class="social-network__link" href="">
+                                                <svg class="social-network__icons" width="20" height="20">
+                                                    <use href="./imges/sprite.svg#facebook">
 
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="social-network__item">
-                                        <a class="social-network__link" href="">
-                                            <svg class="social-network__icons" width="20" height="20">
-                                                <use href="./imges/sprite.svg#linkedin">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="social-network__item">
+                                            <a class="social-network__link" href="">
+                                                <svg class="social-network__icons" width="20" height="20">
+                                                    <use href="./imges/sprite.svg#linkedin">
 
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="team-gruop__item item">
-                        <img class="imge" src="./imges/team-photo/mikola-tarasov.jpg" alt="фото Миколи Тарасова"
-                            width="270">
-                        <div class="team-gruop__description">
-                            <h3 class="team-gruop__name">Микола Тарасов</h3>
-                            <p class="team-gruop__text" lang="eu">Marketing</p>
-                            <div class="social-network">
-                                <ul class="social-network__list">
-                                    <li class="social-network__item">
-                                        <a class="social-network__link" href="">
-                                            <svg class="social-network__icons" width="20" height="20">
-                                                <use href="./imges/sprite.svg#instagram"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="social-network__item">
-                                        <a class="social-network__link" href="">
-                                            <svg class="social-network__icons" width="20" height="20">
-                                                <use href="./imges/sprite.svg#twitter"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="social-network__item">
-                                        <a class="social-network__link" href="">
-                                            <svg class="social-network__icons" width="20" height="20">
-                                                <use href="./imges/sprite.svg#facebook">
+                        </li>
+                        <li class="team-gruop__item item">
+                            <img class="imge" src="./imges/team-photo/mikola-tarasov.jpg" alt="фото Миколи Тарасова"
+                                width="100%">
+                            <div class="team-gruop__description">
+                                <h3 class="team-gruop__name">Микола Тарасов</h3>
+                                <p class="team-gruop__text" lang="eu">Marketing</p>
+                                <div class="social-network">
+                                    <ul class="social-network__list">
+                                        <li class="social-network__item">
+                                            <a class="social-network__link" href="">
+                                                <svg class="social-network__icons" width="20" height="20">
+                                                    <use href="./imges/sprite.svg#instagram"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="social-network__item">
+                                            <a class="social-network__link" href="">
+                                                <svg class="social-network__icons" width="20" height="20">
+                                                    <use href="./imges/sprite.svg#twitter"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="social-network__item">
+                                            <a class="social-network__link" href="">
+                                                <svg class="social-network__icons" width="20" height="20">
+                                                    <use href="./imges/sprite.svg#facebook">
 
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="social-network__item">
-                                        <a class="social-network__link" href="">
-                                            <svg class="social-network__icons" width="20" height="20">
-                                                <use href="./imges/sprite.svg#linkedin">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="social-network__item">
+                                            <a class="social-network__link" href="">
+                                                <svg class="social-network__icons" width="20" height="20">
+                                                    <use href="./imges/sprite.svg#linkedin">
 
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="team-gruop__item item">
-                        <img class="imge" src="./imges/team-photo/mihaylo-ermakov.jpg" alt="фото Михайла Єрмакова"
-                            width="270">
-                        <div class="team-gruop__description">
-                            <h3 class="team-gruop__name">Михайло Єрмаков</h3>
-                            <p class="team-gruop__text" lang="eu">UI Designer</p>
-                            <div class="social-network">
-                                <ul class="social-network__list">
-                                    <li class="social-network__item">
-                                        <a class="social-network__link" href="">
-                                            <svg class="social-network__icons" width="20" height="20">
-                                                <use href="./imges/sprite.svg#instagram"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="social-network__item">
-                                        <a class="social-network__link" href="">
-                                            <svg class="social-network__icons" width="20" height="20">
-                                                <use href="./imges/sprite.svg#twitter"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="social-network__item">
-                                        <a class="social-network__link" href="">
-                                            <svg class="social-network__icons" width="20" height="20">
-                                                <use href="./imges/sprite.svg#facebook">
+                        </li>
+                        <li class="team-gruop__item item">
+                            <img class="imge" src="./imges/team-photo/mihaylo-ermakov.jpg" alt="фото Михайла Єрмакова"
+                                width="100%">
+                            <div class="team-gruop__description">
+                                <h3 class="team-gruop__name">Михайло Єрмаков</h3>
+                                <p class="team-gruop__text" lang="eu">UI Designer</p>
+                                <div class="social-network">
+                                    <ul class="social-network__list">
+                                        <li class="social-network__item">
+                                            <a class="social-network__link" href="">
+                                                <svg class="social-network__icons" width="20" height="20">
+                                                    <use href="./imges/sprite.svg#instagram"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="social-network__item">
+                                            <a class="social-network__link" href="">
+                                                <svg class="social-network__icons" width="20" height="20">
+                                                    <use href="./imges/sprite.svg#twitter"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="social-network__item">
+                                            <a class="social-network__link" href="">
+                                                <svg class="social-network__icons" width="20" height="20">
+                                                    <use href="./imges/sprite.svg#facebook">
 
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="social-network__item">
-                                        <a class="social-network__link" href="">
-                                            <svg class="social-network__icons" width="20" height="20">
-                                                <use href="./imges/sprite.svg#linkedin">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="social-network__item">
+                                            <a class="social-network__link" href="">
+                                                <svg class="social-network__icons" width="20" height="20">
+                                                    <use href="./imges/sprite.svg#linkedin">
 
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
         <section class="customers section">
             <div class="container">
                 <div class="customers-gruop">
@@ -382,63 +437,66 @@
     </main>
     <footer class="footer">
         <div class="footer__container">
-            <div class="address-group">
-                <a class="logo footer__logo link" href="./index.html"><span class="logo__secondary">Web</span>Studio</a>
-                <address class="address-group__contacts link">
-                    <ul class="address-group__list  list">
-                        <li class="address-group__item ">
-                            <a class="address-group__map link" href="https://goo.gl/maps/YsEpjzGzhALQQW4K9"
-                                target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26
+            <div class="footer__info">
+                <div class="address-group">
+                    <a class="logo footer__logo link" href="./index.html"><span
+                            class="logo__secondary">Web</span>Studio</a>
+                    <address class="address-group__contacts link">
+                        <ul class="address-group__list  list">
+                            <li class="address-group__item ">
+                                <a class="address-group__map link" href="https://goo.gl/maps/YsEpjzGzhALQQW4K9"
+                                    target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26
+                                </a>
+                            </li>
+                            <li class="address-group__item ">
+                                <a class="address-group__link  link" href="mailto:info@devstudio.com">info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="address-group__item ">
+                                <a class="address-group__link link" href="tel:+380961111111">+38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="social-network footer__social-network">
+                    <h2 class="social-network__title">приєднуйтесь</h2>
+                    <ul class="social-network__list">
+                        <li class="social-network__item">
+                            <a class="social-network__link" href="">
+                                <svg class="social-network__icons" width="20" height="20">
+                                    <use href="./imges/sprite.svg#instagram"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="address-group__item ">
-                            <a class="address-group__link  link" href="mailto:info@devstudio.com">info@devstudio.com
+                        <li class="social-network__item">
+                            <a class="social-network__link" href="">
+                                <svg class="social-network__icons" width="20" height="20">
+                                    <use href="./imges/sprite.svg#twitter"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="address-group__item ">
-                            <a class="address-group__link link" href="tel:+380961111111">+38 096 111 11 11
+                        <li class="social-network__item">
+                            <a class="social-network__link" href="">
+                                <svg class="social-network__icons" width="20" height="20">
+                                    <use href="./imges/sprite.svg#facebook">
+
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-network__item">
+                            <a class="social-network__link" href="">
+                                <svg class="social-network__icons" width="20" height="20">
+                                    <use href="./imges/sprite.svg#linkedin">
+
+                                    </use>
+                                </svg>
                             </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-            <div class="social-network footer__social-network">
-                <h2 class="social-network__title">приєднуйтесь</h2>
-                <ul class="social-network__list">
-                    <li class="social-network__item">
-                        <a class="social-network__link" href="">
-                            <svg class="social-network__icons" width="20" height="20">
-                                <use href="./imges/sprite.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-network__item">
-                        <a class="social-network__link" href="">
-                            <svg class="social-network__icons" width="20" height="20">
-                                <use href="./imges/sprite.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-network__item">
-                        <a class="social-network__link" href="">
-                            <svg class="social-network__icons" width="20" height="20">
-                                <use href="./imges/sprite.svg#facebook">
 
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-network__item">
-                        <a class="social-network__link" href="">
-                            <svg class="social-network__icons" width="20" height="20">
-                                <use href="./imges/sprite.svg#linkedin">
-
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-
+                </div>
             </div>
             <form class="social-form">
                 <div class="social-form__label">
@@ -453,6 +511,7 @@
             </form>
         </div>
     </footer>
+    <!-- backdrop -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal__btn-close" type="button" data-modal-close>
@@ -509,7 +568,11 @@
             </form>
         </div>
     </div>
+    <!-- Mobile menu -->
+
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

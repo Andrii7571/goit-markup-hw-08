@@ -1,11 +1,26 @@
 .contacts {
     margin-left: auto;
 &__list {
-    display: flex;
+    @media screen and (max-width: 767px) {
+            display: none;
+    
+        }
+
+    @media screen and (min-width: 1200px) {
+         display: flex; 
+
+        }
+    
 }
 
 &__list>.item:not(:last-child) {
-    margin-right: 50px;
+    @media screen and (min-width: 768px) {
+            margin-bottom: 10px;
+        }
+    @media screen and (min-width: 1200px) {
+         margin-right: 50px;
+        }
+    
 }
 
 &__link {
@@ -20,6 +35,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 1199px) {
+            font-size: 12px;
+        }
 }
 
 &__link:hover,

@@ -1,6 +1,9 @@
 .navigation {
-    display: flex;
-    align-items: center;
+      display: flex;
+        align-items: center;
+  
+ 
+       
 &__link {
     color: $color-title;
        font-size: 14px;
@@ -15,6 +18,11 @@
 
 &__list {
     display: flex;
+        @media screen and (max-width: 767px) {
+                display: none;
+        
+            }
+ 
 }
 
 &__link:hover,
@@ -24,6 +32,7 @@
 }
 
 &__list>.item:not(:last-child) {
+    
     margin-right: 50px;
 }
 
