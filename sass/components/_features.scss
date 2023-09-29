@@ -1,90 +1,74 @@
 .features.section {
-    display: block;
-    
-    @media screen and (max-width: 768px) {
-         padding-top: 60px;
-    padding-bottom: 60px;   
-        }
-   
+  display: block;
 
-    @media screen and (min-width: 480px) {
-        width: 450px;
+  @media screen and (max-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 738px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1170px;
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
 }
+
+.features-group {
+  &__list {
     @media screen and (min-width: 768px) {
-        width: 738px;
-}
-   @media screen and (min-width: 1200px) {
-       width: 1170px;
-       padding-top: 94px;
-       padding-bottom: 0;
-}
-}
-
-.features-group{
-
- 
-
-                  
-
-&__list {
-        @media screen and (min-width: 768px) {
-            display: flex;
-            flex-wrap: wrap;
-            margin: -15px;
-        }
-
-
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
     }
-  
- 
-  
+  }
 
-
-&__item{
-    
+  &__item {
     @media screen and (min-width: 768px) {
-        width: calc((100% - 2 * 30px) / 2);
-        margin: 15px;
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
     }
 
     @media screen and (min-width: 1200px) {
-         width: calc((100% - 4 * 30px) / 4);
-         margin: 15px;
-     }
-    
+      width: calc((100% - 4 * 30px) / 4);
+      margin: 15px;
     }
-    
-        
+  }
 
-&__title {
+  &__title {
     margin-bottom: 10px;
     color: $color-title;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
-}
+  }
 
-
-
-&__text {
+  &__text {
     font-size: 14px;
     line-height: 1.71;
-}
+  }
 
-&__icons {
+  &__icons {
     display: flex;
     align-items: center;
     justify-content: center;
-   
+
     height: 120px;
-margin-bottom: 30px;
-   
+    margin-bottom: 30px;
+
     border-radius: 4px;
     background: $features-group-color;
-}
+  }
 }
 
 @media screen and (max-width: 767px) {
-    .features-group__item:not(:last-child) {margin-bottom: 30px;
-}}
+  .features-group__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

@@ -1,16 +1,14 @@
-
-
 .product-thumb {
-    position: relative;
+  position: relative;
 
-    overflow: hidden;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-&__imges {
+  overflow: hidden;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &__imges {
     display: block;
-}
+  }
 
-&__overlay {
+  &__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -27,9 +25,9 @@
     transition: translateY(100%);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-&__text {
+  &__text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -43,5 +41,5 @@
     letter-spacing: 0.54px;
 
     transform: translate(-50%, -50%);
-}}
-
+  }
+}

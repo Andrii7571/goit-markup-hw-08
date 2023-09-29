@@ -1,52 +1,46 @@
 .wrapper-team {
-    background-color: $background-secondary;;
+  background-color: $background-secondary;
 }
-.team.section{
-       
-        @media screen and (min-width: 480px) {
-            width: 450px;
-        }
-    
-        @media screen and (min-width: 768px) {
-            width: 738px;
-        }
-    
-        @media screen and (min-width: 1200px) {
-            width: 1170px;
-        }
+.team.section {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 738px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1170px;
+  }
 }
 
 .team-gruop {
-
-
-&__list {
+  &__list {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
     list-style-type: none;
-    
-    
-}
-&__item{
+  }
+  &__item {
     margin-left: auto;
     margin-right: auto;
-     border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
     background: $White-color;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
-    
     @media screen and (min-width: 768px) {
-            width: calc((100% - 2 * 30px) / 2);
-            margin: 15px;
-        }
-    
-        @media screen and (min-width: 1200px) {
-            width: calc((100% - 4 * 30px) / 4);
-            margin: 15px;
-        }
-}
-&__title {
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 4 * 30px) / 4);
+      margin: 15px;
+    }
+  }
+  &__title {
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -56,21 +50,13 @@
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
-}
+  }
 
-
-
-
-
-
-
-&__description {
+  &__description {
     padding: 30px;
-}
+  }
 
-
-
-&__name {
+  &__name {
     margin-bottom: 10px;
 
     color: $color-title;
@@ -78,18 +64,19 @@
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.48px;
-}
+  }
 
-&__text {
+  &__text {
     margin-bottom: 16px;
 
     text-align: center;
     font-size: 16px;
     letter-spacing: 0.48px;
-}}
+  }
+}
 
-        @media screen and (max-width: 767px) {
-    .team-gruop__item:not(:last-child){
-            margin-bottom: 30px;}
-        }
-
+@media screen and (max-width: 767px) {
+  .team-gruop__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

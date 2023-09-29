@@ -8,13 +8,20 @@
 
 &__text {
     display: inline-flex;
-
-    color: $main-text;
-    font-size: 14px;
+    align-items: baseline;
+ color: $main-text;
+    font-size: 12px;
     font-weight: 400;
+   letter-spacing: 0.36px;
+
+@media screen and (min-width: 1200px) {
+    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.42px;
-}
+}  
+    }
+   
+  
 
 &__custom::before {
     content: "";
@@ -38,11 +45,25 @@
 &__link {
     margin-left: 2px;
     color: $brand-color;
-    font-size: 14px;
+     font-size: 12px;
     font-weight: 400;
     line-height: 1.71;
-    letter-spacing: 0.42px;
+    letter-spacing: 0.36px;
     text-decoration-line: underline;
+
+
+   
+    @media screen and (min-width: 1200px) {
+
+    font-size: 14px;
+letter-spacing: 0.42px;
+         
+        }
+    
+    
+   
+
+
 }
 
 &__custom {
