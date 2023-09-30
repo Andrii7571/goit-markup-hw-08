@@ -54,17 +54,17 @@ p {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
@@ -99,10 +99,13 @@ p {
   overflow: hidden;
 }
 
+.wrapper-header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header {
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 1px solid #ececec;
 }
 @media screen and (max-width: 767px) {
   .header {
@@ -111,17 +114,17 @@ p {
 }
 @media screen and (min-width: 480px) {
   .header {
-    width: 450px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .header {
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
@@ -264,7 +267,7 @@ p {
   list-style: none;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .menu {
     display: none;
   }
@@ -315,8 +318,6 @@ p {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
-  background-color: #3f51b5;
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -493,17 +494,17 @@ p {
 
 @media screen and (min-width: 480px) {
   .hero.section {
-    width: 450px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .hero.section {
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero.section {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
@@ -561,17 +562,17 @@ p {
 }
 @media screen and (min-width: 480px) {
   .features.section {
-    width: 450px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .features.section {
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .features.section {
-    width: 1170px;
+    width: 1200px;
     padding-top: 94px;
     padding-bottom: 0;
   }
@@ -714,8 +715,12 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -15px;
   list-style-type: none;
+}
+@media screen and (min-width: 480px) {
+  .team-gruop__list {
+    margin: -15px;
+  }
 }
 .team-gruop__item {
   margin-left: auto;
@@ -928,7 +933,11 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -15px;
+}
+@media screen and (max-width: 767px) {
+  .customers-gruop__list {
+    margin: -15px;
+  }
 }
 .customers-gruop__item {
   width: calc((100% - 60px) / 2);
@@ -981,6 +990,7 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .filter {
@@ -994,6 +1004,7 @@ p {
 }
 .filter__item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 .filter__btn {
   padding: 6px 22px;
@@ -1024,13 +1035,15 @@ p {
           box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 1199px) {
+  .portfolio.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .portfolio {
   background: #fff;
-}
-@media screen and (min-width: 768px) {
-  .portfolio {
-    padding-top: 60px;
-  }
 }
 .portfolio__list {
   display: -webkit-box;
@@ -1038,6 +1051,11 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__list {
+    margin: -15px;
+  }
 }
 .portfolio__link {
   display: block;
@@ -1051,24 +1069,43 @@ p {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio__item {
-  width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+@media screen and (min-width: 480px) {
+  .portfolio__link {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__link {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__link {
+    width: 370px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
 }
 .portfolio__link:hover, .portfolio__link:focus {
   border: 1px solid #eee;
   background: #fff;
   -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
-.portfolio__item:nth-child(3n+3) {
-  margin-right: 0;
-}
-.portfolio__item:nth-last-child(-n+3) {
-  margin-bottom: 0;
 }
 .portfolio__title {
   margin-bottom: 4px;
@@ -1107,6 +1144,7 @@ p {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .product-thumb__imges {
+  width: 100%;
   display: block;
 }
 .product-thumb__overlay {
@@ -1143,17 +1181,17 @@ p {
 
 @media screen and (min-width: 480px) {
   .footer.section {
-    width: 450px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .footer.section {
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer.section {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
@@ -1170,7 +1208,7 @@ p {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .footer .social-network__link:hover, .footer .social-network__link:focus {
-  background-color: var(--brand-color);
+  background-color: #2196f3;
 }
 
 .footer {
@@ -1294,6 +1332,8 @@ p {
 }
 
 .modal {
+  max-height: 100%;
+  overflow-y: scroll;
   position: relative;
   padding: 40px;
   border-radius: 4px;
@@ -1430,12 +1470,12 @@ p {
 @media screen and (min-width: 768px) {
   .modal__textarea {
     width: 370px;
+    height: 120px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal__textarea {
     width: 448px;
-    height: 120px;
   }
 }
 .modal__label.textarea {

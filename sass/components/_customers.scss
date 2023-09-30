@@ -12,7 +12,9 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    @media screen and (max-width: 767px) {
+      margin: -15px;
+    }
   }
   &__item {
     width: calc((100% - 2 * 30px) / 2);

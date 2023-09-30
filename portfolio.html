@@ -15,41 +15,53 @@
 </head>
 
 <body>
+    <div class="wrapper-header">
+        <header class="header ">
+            <div class="container header">
+                <nav class="navigation">
+                    <a class="logo header__logo" href="./index.html"><span class="logo__secondary">Web</span>Studio</a>
+                    <ul class="navigation__list list menu">
+                        <li class="navigation__item item">
+                            <a class="navigation__link  link" href="./index.html">Студія</a>
+                        </li>
+                        <li class="navigation__item item">
+                            <a class="navigation__link navigation__link--active link"
+                                href="./portfolio.html">Портфоліо</a>
+                        </li>
+                        <li class="navigation__item item">
+                            <a class="navigation__link link" href="">Контакти</a>
+                        </li>
+                    </ul>
+                    <div class="continer-menu">
+                        <button class="burger-menu menu-toggle js-open-menu" aria-expanded="false"
+                            aria-controls="mobile-menu">
+                            <svg class="burger-menu__icons" width="40" height="40"
+                                aria-label="Перемикач мобілного меню">
 
-    <header class="header">
-        <div class="container header">
-            <nav class="navigation">
-                <a class="logo header__logo" href="./index.html"><span class="logo__secondary">Web</span>Studio</a>
-                <ul class="navigation__list list">
-                    <li class="navigation__item item">
-                        <a class="navigation__link  link" href="./index.html">Студія</a>
-                    </li>
-                    <li class="navigation__item item">
-                        <a class="navigation__link navigation__link--active link" href="./portfolio.html">Портфоліо</a>
-                    </li>
-                    <li class="navigation__item item">
-                        <a class="navigation__link link" href="">Контакти</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="contacts">
-                <ul class="contacts__list list">
-                    <li class="contacts__item item">
-                        <a class="contacts__link link" href="mailto:info@devstudio.com">
-                            <svg class="contacts__icons" width="16" height="12">
-                                <use href="./imges/sprite.svg#envelope"></use>
-                            </svg>info@devstudio.com</a>
-                    </li>
-                    <li class="contacts__item item">
-                        <a class="contacts__link link" href="tel:+380961111111">
-                            <svg class="contacts__icons" width="10" height="16">
-                                <use href="./imges/sprite.svg#smartphone"></use>
-                            </svg>+38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
+                                <use class="burger-menu__icon-menu" href="./imges/sprite.svg#menu"></use>
+                            </svg>
+                        </button>
+
+                </nav>
+                <div class="contacts">
+                    <ul class="contacts__list list">
+                        <li class="contacts__item item">
+                            <a class="contacts__link link" href="mailto:info@devstudio.com">
+                                <svg class="contacts__icons" width="16" height="12">
+                                    <use href="./imges/sprite.svg#envelope"></use>
+                                </svg>info@devstudio.com</a>
+                        </li>
+                        <li class="contacts__item item">
+                            <a class="contacts__link link" href="tel:+380961111111">
+                                <svg class="contacts__icons" width="10" height="16">
+                                    <use href="./imges/sprite.svg#smartphone"></use>
+                                </svg>+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </div>
+
+        </header>
+    </div>
     <main>
         <section class="portfolio section">
             <div class="container">
@@ -66,7 +78,7 @@
                         <a class="portfolio__link link" href="">
                             <div class="product-thumb">
                                 <img class="product-thumb__imges" src="./imges/photo-portfolio/technocrack.jpg"
-                                    alt="Веб-сайт Технокряк" width=370>
+                                    alt="Веб-сайт Ткхнокряк">
                                 <div class="product-thumb__overlay">
                                     <p class="product-thumb__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це
@@ -84,7 +96,7 @@
                         <a class="portfolio__link link" href="">
                             <div class="product-thumb">
                                 <img class="product-thumb__imges" src="./imges/photo-portfolio/basketball-poster.jpg"
-                                    alt="Постер New Orlean vs Golden Star" width=370>
+                                    alt="Постер New Orlean vs Golden Star">
                                 <div class="product-thumb__overlay">
                                     <p class="product-thumb__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це
@@ -102,7 +114,7 @@
                         <a class="portfolio__link link" href="">
                             <div class="product-thumb">
                                 <img class="product-thumb__imges" src="./imges/photo-portfolio/seafood-restaurant.jpg"
-                                    alt="Ресторан Seafood" width=370>
+                                    alt="Додаток Ресторан Seafood">
                                 <div class="product-thumb__overlay">
                                     <p class="product-thumb__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це
@@ -120,7 +132,7 @@
                         <a class="portfolio__link link" href="">
                             <div class="product-thumb">
                                 <img class="product-thumb__imges" src="./imges/photo-portfolio/project-prime.jpg"
-                                    alt="Проєкт Prime" width=370>
+                                    alt="Проєкт Prime">
                                 <div class="product-thumb__overlay">
                                     <p class="product-thumb__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це
@@ -138,7 +150,7 @@
                         <a class="portfolio__link link" href="">
                             <div class="product-thumb">
                                 <img class="product-thumb__imges" src="./imges/photo-portfolio/boxes-project.jpg"
-                                    alt="Проєкт Boxes" width=370>
+                                    alt="Проєкт Boxes">
                                 <div class="product-thumb__overlay">
                                     <p class="product-thumb__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це
@@ -156,7 +168,7 @@
                         <a class="portfolio__link link" href="">
                             <div class="product-thumb">
                                 <img class="product-thumb__imges" src="./imges/photo-portfolio/inspiration-website.jpg"
-                                    alt="Веб-сайт Inspiration has no Borders" width=370>
+                                    alt="Веб-сайт Inspiration has no Borders">
                                 <div class="product-thumb__overlay">
                                     <p class="product-thumb__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це
@@ -174,7 +186,7 @@
                         <a class="portfolio__link link" href="">
                             <div class="product-thumb">
                                 <img class="product-thumb__imges" src="./imges/photo-portfolio/limited-edition.jpg"
-                                    alt="Видання Limited Edition" width=370>
+                                    alt="Видання Limited Edition">
                                 <div class="product-thumb__overlay">
                                     <p class="product-thumb__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це
@@ -192,7 +204,7 @@
                         <a class="portfolio__link link" href="">
                             <div class="product-thumb">
                                 <img class="product-thumb__imges" src="./imges/photo-portfolio/lab-project.jpg"
-                                    alt="Проєкт LAB" width=370>
+                                    alt="Проєкт LAB">
                                 <div class="product-thumb__overlay">
                                     <p class="product-thumb__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це
@@ -210,7 +222,7 @@
                         <a class="portfolio__link link" href="">
                             <div class="product-thumb">
                                 <img class="product-thumb__imges" src="./imges/photo-portfolio/growing-business.jpg"
-                                    alt="Growing Business" width=370>
+                                    alt="Growing Business">
                                 <div class="product-thumb__overlay">
                                     <p class="product-thumb__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це
@@ -231,63 +243,66 @@
     </main>
     <footer class="footer">
         <div class="footer__container">
-            <div class="address-group">
-                <a class="logo footer__logo link" href="./index.html"><span class="logo__secondary">Web</span>Studio</a>
-                <address class="address-group__contacts link">
-                    <ul class="address-group__list  list">
-                        <li class="address-group__item ">
-                            <a class="address-group__map link" href="https://goo.gl/maps/YsEpjzGzhALQQW4K9"
-                                target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26
+            <div class="footer__info">
+                <div class="address-group">
+                    <a class="logo footer__logo link" href="./index.html"><span
+                            class="logo__secondary">Web</span>Studio</a>
+                    <address class="address-group__contacts link">
+                        <ul class="address-group__list  list">
+                            <li class="address-group__item ">
+                                <a class="address-group__map link" href="https://goo.gl/maps/YsEpjzGzhALQQW4K9"
+                                    target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26
+                                </a>
+                            </li>
+                            <li class="address-group__item ">
+                                <a class="address-group__link  link" href="mailto:info@devstudio.com">info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="address-group__item ">
+                                <a class="address-group__link link" href="tel:+380961111111">+38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="social-network footer__social-network">
+                    <h2 class="social-network__title">приєднуйтесь</h2>
+                    <ul class="social-network__list">
+                        <li class="social-network__item">
+                            <a class="social-network__link" href="">
+                                <svg class="social-network__icons" width="20" height="20">
+                                    <use href="./imges/sprite.svg#instagram"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="address-group__item ">
-                            <a class="address-group__link  link" href="mailto:info@devstudio.com">info@devstudio.com
+                        <li class="social-network__item">
+                            <a class="social-network__link" href="">
+                                <svg class="social-network__icons" width="20" height="20">
+                                    <use href="./imges/sprite.svg#twitter"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="address-group__item ">
-                            <a class="address-group__link link" href="tel:+380961111111">+38 096 111 11 11
+                        <li class="social-network__item">
+                            <a class="social-network__link" href="">
+                                <svg class="social-network__icons" width="20" height="20">
+                                    <use href="./imges/sprite.svg#facebook">
+
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-network__item">
+                            <a class="social-network__link" href="">
+                                <svg class="social-network__icons" width="20" height="20">
+                                    <use href="./imges/sprite.svg#linkedin">
+
+                                    </use>
+                                </svg>
                             </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-            <div class="social-network">
-                <h2 class="social-network__title">приєднуйтесь</h2>
-                <ul class="social-network__list">
-                    <li class="social-network__item">
-                        <a class="social-network__link" href="">
-                            <svg class="social-network__icons" width="20" height="20">
-                                <use href="./imges/sprite.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-network__item">
-                        <a class="social-network__link" href="">
-                            <svg class="social-network__icons" width="20" height="20">
-                                <use href="./imges/sprite.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-network__item">
-                        <a class="social-network__link" href="">
-                            <svg class="social-network__icons" width="20" height="20">
-                                <use href="./imges/sprite.svg#facebook">
 
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-network__item">
-                        <a class="social-network__link" href="">
-                            <svg class="social-network__icons" width="20" height="20">
-                                <use href="./imges/sprite.svg#linkedin">
-
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-
+                </div>
             </div>
             <form class="social-form">
                 <div class="social-form__label">
@@ -302,6 +317,66 @@
             </form>
         </div>
     </footer>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="burger-menu menu-toggle js-close-menu">
+            <svg class="burger-menu__icons" width="40" height="40" fill="currentColor"
+                aria-label="Перемикач мобілного меню">
+                <use class="burger-menu__icon-cross" href="./imges/sprite.svg#cross"></use>
+            </svg>
+        </button>
+        <div class="mobile-menu ">
+            <ul class="modile-menu__nav">
+                <li class="mobile-menu__nav-item item"><a class="mobile-menu__link link" href="./index.html">Студія</a>
+                </li>
+                <li class="mobile-menu__nav-item item"><a class="mobile-menu__link link"
+                        href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="mobile-menu__nav-item item"><a class="mobile-menu__link link" href="">Контакти</a>
+                </li>
+            </ul>
+            <ul class="modile-menu__list list">
+                <li class="modile-menu__item item">
+                    <a class="modile-menu__link modile-menu__link--blue link" href="tel:+380961111111">
+                        +38 096 111 11 11</a>
+
+                </li>
+                <li class="modile-menu__item item">
+                    <a class="modile-menu__link link" href="mailto:info@devstudio.com">
+                        info@devstudio.com</a>
+                </li>
+            </ul>
+            <div class="mobile-menu__social">
+                <ul class="mobile-menu__social-list">
+                    <li class="mobile-menu__social-item">
+                        <a class="mobile-menu__social-link link" href="">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a class="mobile-menu__social-link link" href="">
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a class="mobile-menu__social-link link" href="">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a class="mobile-menu__social-link link" href="">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
