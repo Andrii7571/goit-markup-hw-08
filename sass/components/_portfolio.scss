@@ -17,27 +17,22 @@
   }
 
   &__link {
-    display: block;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
     overflow: hidden;
 
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    @media screen and (min-width: 480px) {
-      width: 450px;
-    }
-
-    @media screen and (min-width: 768px) {
-      width: 354px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      width: 370px;
-    }
   }
 
   &__item {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #eee;
+
     &:not(:last-child) {
       @media screen and (max-width: 767px) {
         margin-bottom: 30px;
@@ -80,10 +75,10 @@
   }
 
   &__description {
+    width: 100%;
+
     padding: 20px 24px;
-    border-right: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    border-left: 1px solid #eee;
+
     background: #fff;
   }
 

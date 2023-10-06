@@ -1,4 +1,5 @@
 .product-thumb {
+  width: 100%;
   position: relative;
 
   overflow: hidden;
@@ -34,13 +35,18 @@
     top: 50%;
     left: 50%;
 
-    width: 322px;
+    width: 90%;
 
     color: $White-color;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 1.55;
     letter-spacing: 0.54px;
+
+    @media screen and (min-width: 480px) {
+      font-size: 18px;
+      width: 322px;
+    }
 
     transform: translate(-50%, -50%);
   }

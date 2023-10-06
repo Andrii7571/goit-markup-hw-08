@@ -1,29 +1,29 @@
 .checkbox {
-&__input {
+  &__input {
     position: absolute;
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-}
+  }
 
-&__text {
-    display: inline-flex;
+  &__text {
     align-items: baseline;
- color: $main-text;
+    color: $main-text;
     font-size: 12px;
     font-weight: 400;
-   letter-spacing: 0.36px;
-
-@media screen and (min-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
-}  
+    letter-spacing: 0.36px;
+    @media screen and (min-width: 480px) {
+      display: flex;
     }
-   
-  
 
-&__custom::before {
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.42px;
+    }
+  }
+
+  &__custom::before {
     content: "";
     opacity: 0;
     position: absolute;
@@ -35,55 +35,52 @@
     border-radius: 2px;
 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-&__input:hover~&__custom::before,
-&__input:focus~&__custom::before {
+  &__input:hover ~ &__custom::before,
+  &__input:focus ~ &__custom::before {
     opacity: 1;
-}
+  }
 
-&__link {
+  &__link {
+    display: inline;
     margin-left: 2px;
     color: $brand-color;
-     font-size: 12px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.36px;
     text-decoration-line: underline;
 
+    @media screen and (min-width: 480px) {
+      display: flex;
+    }
 
-   
     @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      letter-spacing: 0.42px;
+    }
+  }
 
-    font-size: 14px;
-letter-spacing: 0.42px;
-         
-        }
-    
-    
-   
-
-
-}
-
-&__custom {
+  &__custom {
     position: relative;
     margin-right: 8.38px;
-}
+  }
 
-&__icon--activ {
+  &__icon--activ {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-&__input:checked+&__custom &__icon--activ {
+  &__input:checked + &__custom &__icon--activ {
     opacity: 1;
-}
+  }
 
-&__input:focus>&__text::before {
+  &__input:focus > &__text::before {
     opacity: 1;
-}}
+  }
+}
