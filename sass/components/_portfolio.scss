@@ -31,7 +31,6 @@
   &__item {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid #eee;
 
     &:not(:last-child) {
       @media screen and (max-width: 767px) {
@@ -76,9 +75,8 @@
 
   &__description {
     width: 100%;
-
+    border: 1px solid #eee;
     padding: 20px 24px;
-
     background: #fff;
   }
 

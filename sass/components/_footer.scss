@@ -42,7 +42,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-      width: 1600px;
+      width: 1200px;
       display: flex;
       justify-content: space-evenly;
       align-items: baseline;
@@ -55,17 +55,18 @@
   }
 }
 .footer__info {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-start;
-    margin-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 60px;
   }
 }
 

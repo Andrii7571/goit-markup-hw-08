@@ -157,7 +157,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 80px 20px;
+  padding: 48px 20px;
   background-color: #fff;
 }
 @media screen and (min-width: 480px) {
@@ -1032,7 +1032,11 @@ p {
 }
 .filter__item:not(:last-child) {
   margin-right: 8px;
-  margin-bottom: 15px;
+}
+@media screen and (max-width: 767px) {
+  .filter__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 .filter__btn {
   padding: 6px 22px;
@@ -1110,7 +1114,6 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: 1px solid #eee;
 }
 @media screen and (max-width: 767px) {
   .portfolio__item:not(:last-child) {
@@ -1152,6 +1155,7 @@ p {
 }
 .portfolio__description {
   width: 100%;
+  border: 1px solid #eee;
   padding: 20px 24px;
   background: #fff;
 }
@@ -1248,7 +1252,7 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
-    width: 1600px;
+    width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1267,17 +1271,22 @@ p {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .footer__info {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer__info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1285,12 +1294,12 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    margin-bottom: 60px;
   }
 }
 
