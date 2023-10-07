@@ -767,6 +767,9 @@ p {
     margin: 15px;
   }
 }
+.team-gruop__imge {
+  width: 100%;
+}
 .team-gruop__title {
   margin-bottom: 50px;
   margin-left: auto;
