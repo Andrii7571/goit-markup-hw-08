@@ -20,6 +20,7 @@
     height: 100%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     align-content: flex-start;
     overflow: hidden;
 
@@ -78,6 +79,7 @@
     border: 1px solid #eee;
     padding: 20px 24px;
     background: #fff;
+    flex-grow: 1;
   }
 
   &__link:hover .product-thumb__overlay {
